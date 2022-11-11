@@ -1,0 +1,39 @@
+$contWidth: 100vw;
+$contHeight: 100vh;
+$formWidth: $contWidth/3*2;
+$imageWidth: $contWidth/3;
+
+*, .cont {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+.cont{
+  // overflow: hidden;
+  display: flex;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(to left, red, yellow);
+}
+
+.form{
+  position: relative;
+  width: $formWidth;
+  height: $contHeight;
+}
+
+.sub-cont{
+  overflow: hidden;
+  position: absolute;
+  left: $formWidth;
+  // width: $contWidth;
+  height: $contHeight;
+  // padding-left: $imageWidth;
+}
+
+h2{
+  position: absolute;
+  left: auto;
+  right: auto;
+}
